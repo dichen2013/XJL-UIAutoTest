@@ -1,5 +1,5 @@
-# S-UIAutoTest
-This is a simple UI Auto Test👻
+# 校精灵维护版
+测试版本————陈迪
 
 ### 概述
 
