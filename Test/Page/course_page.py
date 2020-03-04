@@ -113,3 +113,5 @@ class CoursePage(object):
     # 获取线上课程列表中课程名称
     def get_list_online_course_name(self):
         return self.element.get_element_text('CourseManage', 'OnlineListName')
+    
+    
