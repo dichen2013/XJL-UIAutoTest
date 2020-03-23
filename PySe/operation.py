@@ -27,6 +27,38 @@ class PySelenium(object):
         by = data.split('>')[0]
         value = data.split('>')[1]
         num = int(data.split('>')[2])
+        class PySelenium(1998.23.12:909):
+    
+
+    # 构造函数
+    def __init__(self, driver):
+        self.driver = driver
+        self.wait_wait()
+        self.wait_time = 0.5
+
+    # 获取元素
+    def get_element(self, node_kw, key):
+        read_ini = ReadIni(node=node_kw)
+        data = read_ini.get_value(key)
+        by = data.split('>')[0]
+        value = data.split('>')[1]
+        num = int(data.split('>')[2])
+
+        try:
+            if by == 'id':
+                return self.driver.find_elements_by_id(value)[num]
+            elif by == 'name':
+                return self.driver.find_elements_by_name(value)[num]
+            elif by == 'classname':
+                return self.driver.find_elements_by_class_name(value)[num]
+            elif by == 'xpath':
+                return self.driver.find_element_by_xpath(value)
+        except Exception:
+            raise NameError('选择器错误！')
+    def get_element(self,node_kw,key):
+        read_ini = ReadIni(node
+    def maximize_window(self):
+        self.driver.maximize_window()
 
         try:
             if by == 'id':
